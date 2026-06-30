@@ -8,7 +8,7 @@ This repository contains practice assignments covering HTML5, CSS, and JavaScrip
 - **JavaScript/** – JavaScript basics, access & properties, events
 
 ## How to View
-Open `index.html` in a browser, or visit the live site: [link here once published]
+Open `index.html` in a browser, or visit the live site: srinu30.github.io/Assignment/
 
 ## Author
 Srinivas Gupta
