@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Page Adjustments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 id="top">CSS Page Adjustments Demo</h1>
+
+    <p><a href="#bottom">Click to go to bottom of page</a></p>
+
+    <h2>Table with Border + Hover</h2>
+    <table>
+        <tr><th>Name</th><th>Course</th></tr>
+        <tr><td>John</td><td>HTML5</td></tr>
+        <tr><td>Mary</td><td>CSS</td></tr>
+    </table>
+
+    <h2>Visibility and Display</h2>
+    <p class="hidden-text">This text has visibility: hidden (it takes up space but isn't shown).</p>
+    <p class="visible-text">This text has visibility: visible.</p>
+    <table>
+        <tr><th>A</th><th class="collapsed">B (collapsed)</th><th>C</th></tr>
+        <tr><td>1</td><td class="collapsed">2 (collapsed)</td><td>3</td></tr>
+    </table>
+
+    <p class="display-none">This paragraph has display:none (will not show at all).</p>
+    <span class="display-inline">Inline span</span>
+    <div class="display-block">Block div</div>
+    <div class="display-contents">Contents div (wrapper disappears, children stay)</div>
+    <ul>
+        <li class="display-list-item">List item with display:list-item</li>
+    </ul>
+
+    <h2>Padding vs Margin</h2>
+    <div class="outer">
+        <div class="inner">Inner box: padding pushes content inward, margin pushes the box away from neighbors.</div>
+    </div>
+
+    <h2>Multiple Background Images</h2>
+    <div class="multi-bg">
+        This element has 2 background images layered together, each with its own size.
+    </div>
+
+    <p id="bottom"><a href="#top">Click to go to top of page</a></p>
+
+</body>
+</html>

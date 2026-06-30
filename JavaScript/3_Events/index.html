@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Events</title>
+</head>
+<body>
+
+    <h1>JavaScript Events Demo</h1>
+
+    <h2>1. Show Current Date and Time</h2>
+    <button id="dateTimeBtn">Show Date/Time</button>
+    <p id="dateTimeOutput"></p>
+
+    <h2>2. Form Validation</h2>
+    <form id="myForm">
+        <input type="text" id="nameInput" placeholder="Enter your name">
+        <button type="submit">Submit</button>
+    </form>
+    <p id="validationOutput"></p>
+
+    <h2>3. console.log() Debugging</h2>
+    <p>Open the console (F12) to see debug messages logged by this page.</p>
+
+    <h2>4. Cookies</h2>
+    <button onclick="setCookie('username', 'JohnDoe', 7)">Set Cookie</button>
+    <button onclick="displayCookie()">Get Cookie</button>
+    <button onclick="checkCookieExists()">Check Cookie</button>
+    <p id="cookieOutput"></p>
+
+    <h2>5. JSON Object</h2>
+    <button onclick="showJsonData()">Show JSON Data</button>
+    <p id="jsonOutput"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Task 1: table-layout fixed vs none(auto) */
+.fixed-table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+.auto-table {
+    table-layout: auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+.fixed-table th, .fixed-table td,
+.auto-table th, .auto-table td {
+    border: 1px solid #999;
+    padding: 8px;
+}
+
+/* Task 2: list-style-type */
+.list-square { list-style-type: square; }
+.list-roman { list-style-type: upper-roman; }
+
+/* Task 3: CSS Grid - different types */
+.grid-equal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 equal columns */
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.grid-equal div {
+    background: lightblue;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-mixed {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* sidebar + main content layout */
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.grid-mixed div {
+    background: lightgreen;
+    padding: 20px;
+}
+
+/* Task 4: hero image */
+.hero {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                       url("https://via.placeholder.com/1200x400");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin-bottom: 15px;
+}
+
+/* Task 5: viewport / media queries for grid, image, video */
+.responsive-box {
+    background-color: steelblue;
+    color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+.responsive-img, .responsive-video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    .responsive-box {
+        background-color: tomato;
+    }
+    .grid-equal {
+        grid-template-columns: 1fr; /* stack into a single column on small screens */
+    }
+}

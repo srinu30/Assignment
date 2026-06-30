@@ -1,0 +1,80 @@
+/* ===== CSS Basics Assignment ===== */
+
+/* Task 1: CSS comment example */
+/* This stylesheet demonstrates background, borders, sizing, and fonts */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.title {
+    text-align: center;
+    color: #333;
+}
+
+/* Task 2: background-color and a fixed, sized background-image */
+.bg-box {
+    background-color: lightblue;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.bg-image-box {
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+    background-attachment: fixed;   /* image does not scroll with the page */
+    background-size: 100px 100px;   /* specify the size of the background image */
+    background-repeat: repeat;
+    padding: 40px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+/* Task 3: different border-style on each side */
+.border-box {
+    border-top: 5px solid red;
+    border-right: 5px dashed green;
+    border-bottom: 5px dotted blue;
+    border-left: 5px double orange;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+/* Task 4: height and width in pixels and percentage */
+.size-px {
+    height: 100px;
+    width: 300px;
+    background-color: #eee;
+    margin-bottom: 10px;
+}
+
+.size-pct {
+    height: 15%;
+    width: 50%;
+    background-color: #ddd;
+    margin-bottom: 15px;
+}
+
+/* Task 5: different font-styles, font-size, font-family, colors, text-align */
+.font-1 {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: navy;
+    text-align: center;
+}
+
+.font-2 {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-style: italic;
+    color: darkred;
+    text-align: right;
+}
+
+.font-3 {
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: green;
+    text-align: left;
+}

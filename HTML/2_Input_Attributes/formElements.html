@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input Attributes and Restrictions</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 30px; }
+        fieldset { margin-bottom: 20px; }
+        label { display: inline-block; width: 160px; }
+        .row { margin-bottom: 8px; }
+    </style>
+</head>
+<body>
+
+    <h1>Form Elements Demo</h1>
+
+    <form action="#" method="get">
+
+        <fieldset>
+            <legend>Basic Input Types</legend>
+
+            <div class="row">
+                <label for="txt">Text:</label>
+                <input type="text" id="txt" name="txt" placeholder="Enter text">
+            </div>
+
+            <div class="row">
+                <label for="pwd">Password:</label>
+                <input type="password" id="pwd" name="pwd">
+            </div>
+
+            <div class="row">
+                <label>Radio:</label>
+                <input type="radio" id="male" name="gender" value="male"><label for="male" style="width:auto;">Male</label>
+                <input type="radio" id="female" name="gender" value="female"><label for="female" style="width:auto;">Female</label>
+            </div>
+
+            <div class="row">
+                <label>Checkbox:</label>
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe" style="width:auto;">Subscribe to newsletter</label>
+            </div>
+
+            <div class="row">
+                <input type="button" value="Just a Button" onclick="alert('Button clicked!')">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>HTML5 Input Types</legend>
+
+            <div class="row"><label for="num">Number:</label><input type="number" id="num" name="num"></div>
+            <div class="row"><label for="rng">Range:</label><input type="range" id="rng" name="rng" min="0" max="100"></div>
+            <div class="row"><label for="clr">Color:</label><input type="color" id="clr" name="clr"></div>
+            <div class="row"><label for="dt">Date:</label><input type="date" id="dt" name="dt"></div>
+            <div class="row"><label for="fl">File:</label><input type="file" id="fl" name="fl"></div>
+            <div class="row"><label for="tm">Time:</label><input type="time" id="tm" name="tm"></div>
+            <div class="row"><label for="mo">Month:</label><input type="month" id="mo" name="mo"></div>
+            <div class="row"><label for="wk">Week:</label><input type="week" id="wk" name="wk"></div>
+            <div class="row"><label for="em">Email:</label><input type="email" id="em" name="em"></div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Input Restrictions/Attributes</legend>
+
+            <div class="row">
+                <label for="dis">Disabled:</label>
+                <input type="text" id="dis" name="dis" value="Can't edit me" disabled>
+            </div>
+            <div class="row">
+                <label for="ro">Readonly:</label>
+                <input type="text" id="ro" name="ro" value="Read only value" readonly>
+            </div>
+            <div class="row">
+                <label for="req">Required:</label>
+                <input type="text" id="req" name="req" required>
+            </div>
+            <div class="row">
+                <label for="ml">Maxlength (5):</label>
+                <input type="text" id="ml" name="ml" maxlength="5">
+            </div>
+            <div class="row">
+                <label for="mm">Min/Max (1-10):</label>
+                <input type="number" id="mm" name="mm" min="1" max="10">
+            </div>
+            <div class="row">
+                <label for="sz">Size (30):</label>
+                <input type="text" id="sz" name="sz" size="30" value="Visible width of this box is bigger">
+            </div>
+        </fieldset>
+
+    </form>
+
+    <h2>Target Attribute</h2>
+    <p>
+        <a href="https://www.jalaacademy.com" target="_blank">Open in new tab (target="_blank")</a><br>
+        <a href="https://www.jalaacademy.com" target="_self">Open in same tab (target="_self")</a>
+    </p>
+    <p>
+        <strong>target="_blank"</strong> opens the link in a new browser tab/window, while
+        <strong>target="_self"</strong> opens it in the same tab (this is also the default behavior).
+    </p>
+
+    <h2>I-Frame</h2>
+    <iframe src="https://www.jalaacademy.com" width="400" height="250" title="JALA Academy site"></iframe>
+
+    <h2>Marquee</h2>
+    <marquee behavior="scroll" direction="left">JALA Academy - Learn skills that matter!</marquee>
+
+</body>
+</html>

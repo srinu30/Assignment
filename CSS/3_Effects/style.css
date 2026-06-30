@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Task 1: shadow effects + cursor */
+.shadow-box {
+    width: 150px;
+    padding: 20px;
+    background: #eee;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    margin-bottom: 15px;
+}
+.shadow-img {
+    box-shadow: 0 0 10px 3px gray;
+    margin-bottom: 15px;
+}
+.cursor-hover:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+/* Task 2: animation (name, duration, iteration-count, delay) */
+.animated-box {
+    width: 60px;
+    height: 60px;
+    background: tomato;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+    margin-bottom: 15px;
+}
+@keyframes slide {
+    0%   { transform: translateX(0); }
+    50%  { transform: translateX(200px); }
+    100% { transform: translateX(0); }
+}
+
+/* Pagination - hoverable, no spaces */
+.pagination a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    display: inline-block; /* no gaps between items */
+}
+.pagination a:hover { background-color: #ddd; }
+.pagination a.active { background-color: #4CAF50; color: white; }
+
+/* Pagination - with spaces between items */
+.pagination-spaced a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+    display: inline-block;
+}
+.pagination-spaced a:hover { background-color: #ddd; }
+
+/* Task 3: positions */
+.position-container {
+    position: relative;
+    height: 100px;
+    border: 1px dashed gray;
+    margin-bottom: 15px;
+}
+.pos-static {
+    position: static;
+    background: lightblue;
+}
+.pos-relative {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    background: lightgreen;
+}
+.pos-absolute {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: lightyellow;
+}
+.pos-fixed {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: salmon;
+    padding: 5px 10px;
+}
+.pos-sticky-wrapper {
+    height: 150px;
+    overflow-y: auto;
+    border: 1px solid #999;
+    margin-bottom: 15px;
+}
+.pos-sticky {
+    position: sticky;
+    top: 0;
+    background: orange;
+    padding: 5px;
+}
+
+/* Task 4: overflow scroll */
+.overflow-box {
+    height: 80px;
+    overflow: scroll;
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/* Task 5: opacity */
+.opacity-img {
+    opacity: 0.5;
+}

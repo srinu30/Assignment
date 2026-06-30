@@ -1,0 +1,64 @@
+/* Smooth scrolling for the top/bottom links (Task 3) */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Task 1: table border + hover color change */
+table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+table, th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+table:hover {
+    background-color: #fffae6;
+}
+
+/* Task 2: visibility and display properties */
+.hidden-text { visibility: hidden; }
+.visible-text { visibility: visible; }
+.collapsed { visibility: collapse; }
+
+.display-none { display: none; }
+.display-inline { display: inline; background: #cde; padding: 3px; }
+.display-block { display: block; background: #dec; padding: 3px; }
+.display-contents { display: contents; }
+.display-list-item { display: list-item; }
+
+/* Task 4: padding vs margin */
+.outer {
+    background-color: lightgray;
+    margin: 30px;     /* space OUTSIDE the box, between it and other elements */
+}
+.inner {
+    background-color: lightyellow;
+    padding: 30px;    /* space INSIDE the box, between border and content */
+    border: 2px solid black;
+}
+
+/* Spacer to make the page long enough to demonstrate scrolling */
+body::after {
+    content: "";
+    display: block;
+    height: 800px;
+}
+
+/* Task 5: multiple background images with adjustable sizes */
+.multi-bg {
+    height: 200px;
+    background-image:
+        url("https://www.transparenttextures.com/patterns/cubes.png"),
+        url("https://www.transparenttextures.com/patterns/diagonal-striped-brick.png");
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100px 100px, 150px 150px;
+    border: 1px solid #999;
+    padding: 10px;
+}

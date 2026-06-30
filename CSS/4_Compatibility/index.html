@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Compatibility</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>CSS Compatibility Demo</h1>
+
+    <h2>1. Table Layout</h2>
+    <table class="fixed-table">
+        <tr><th>Fixed Col 1</th><th>Fixed Col 2</th></tr>
+        <tr><td>Row data is forced into equal columns</td><td>Even with long content this stays the same width</td></tr>
+    </table>
+    <br>
+    <table class="auto-table">
+        <tr><th>Auto Col 1</th><th>Auto Col 2</th></tr>
+        <tr><td>Short</td><td>This column grows based on its content automatically</td></tr>
+    </table>
+
+    <h2>2. List Style Types</h2>
+    <ul class="list-square">
+        <li>Square bullet item</li>
+        <li>Another item</li>
+    </ul>
+    <ol class="list-roman">
+        <li>Roman numeral item</li>
+        <li>Another item</li>
+    </ol>
+
+    <h2>3. CSS Grid</h2>
+    <div class="grid-equal">
+        <div>1</div><div>2</div><div>3</div>
+    </div>
+    <div class="grid-mixed">
+        <div>Sidebar</div><div>Main Content</div>
+    </div>
+
+    <h2>4. Hero Image</h2>
+    <div class="hero">
+        <h2>Welcome to JALA Academy</h2>
+        <p>Learn skills that matter.</p>
+    </div>
+
+    <h2>5. Viewport / Media Queries</h2>
+    <div class="responsive-box">
+        Resize the browser window — this box changes color/layout on small screens.
+    </div>
+    <img class="responsive-img" src="https://via.placeholder.com/600x300" alt="Responsive image">
+    <video class="responsive-video" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Access and Properties</title>
+</head>
+<body>
+
+    <h1>JavaScript Access and Properties Demo</h1>
+
+    <h2>1. "this" keyword - button disappears on click</h2>
+    <button onclick="hideMe(this)">Click to hide me</button>
+
+    <h2>2. call() and apply()</h2>
+    <button onclick="demoCallApply()">Run call()/apply() demo</button>
+    <p id="callApplyOutput"></p>
+
+    <h2>3. Counter</h2>
+    <p>Count: <span id="countDisplay">0</span></p>
+    <button onclick="incrementCount()">Count</button>
+
+    <h2>4. Counter with getter/setter</h2>
+    <p>Getter/Setter Count: <span id="gsCountDisplay">0</span></p>
+    <button onclick="incrementGSCounter()">Increment</button>
+
+    <p>Open the console (F12) to see the object prototype demo output.</p>
+
+    <script src="script.js"></script>
+</body>
+</html>

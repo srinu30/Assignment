@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+  DOCTYPE is important because it tells the browser which version of
+  HTML to use to render the page, so it renders in "standards mode"
+  instead of "quirks mode".
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Basics</title>
+    <style>
+        /* Quick demo styling for pseudo-classes/elements (Task 4) */
+        a:hover { color: red; }
+        a:visited { color: purple; }
+        p::first-letter { font-size: 1.5em; font-weight: bold; }
+        nav a { margin-right: 10px; }
+    </style>
+</head>
+<body>
+
+    <h1 id="top">HTML Basics Demo</h1>
+
+    <!-- Navigation links used for Task 3: navigate within the page -->
+    <nav>
+        <a href="#section1">Go to Section 1</a>
+        <a href="#section2">Go to Section 2</a>
+    </nav>
+
+    <h2>Headings</h2>
+    <p>This is a normal <b>Bold</b> word and an <i>Italic</i> word inside a paragraph.</p>
+
+    <p>
+        Here is a sentence with an <a href="https://www.jalaacademy.com" target="_blank">anchor link</a>
+        that opens JALA Academy in a new tab.
+    </p>
+
+    <h2>Unordered List</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <h2>Form Label Example</h2>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+    </form>
+
+    <h2>Blockquote</h2>
+    <blockquote>
+        Learning to code is like learning a new language — practice every day.
+    </blockquote>
+
+    <hr>
+
+    <h2 id="section1">Section 1</h2>
+    <p>This is section 1. <span style="color:blue;">This span only colors this part blue</span> while the rest stays normal — that's the difference between span (inline) and div (block).</p>
+
+    <div style="border:1px solid #999; padding:10px;">
+        This whole div is a block-level container with a border around it.
+    </div>
+
+    <img src="https://via.placeholder.com/200x120" alt="Placeholder image" width="200" height="120">
+
+    <h2 id="section2">Section 2</h2>
+    <p>This is section 2, reached using the in-page navigation link above.</p>
+    <p><a href="#top">Back to top</a></p>
+
+</body>
+</html>
